@@ -29,15 +29,8 @@ if (round(2075259 * 9 * 8 / 2 ^ {20}, 2) > phyMemAvailable()) {
                           header = TRUE,
                           sep = ";", 
                           na.strings = "?",
-                          colClasses = c("character", 
-                                         "character", 
-                                         "numeric", 
-                                         "numeric", 
-                                         "numeric", 
-                                         "numeric", 
-                                         "numeric", 
-                                         "numeric", 
-                                         "numeric"))
+                          colClasses = c("character", "character", "numeric", "numeric", "numeric", 
+                                         "numeric", "numeric", "numeric", "numeric"))
     allData$DateTime <- strptime(paste(allData$Date, allData$Time) , "%d/%m/%Y %H:%M:%S")
     allData$Date <- as.Date(strptime(allData$Date, "%d/%m/%Y"))
     
